@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="./css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="/images/ARMY_WALAH__1___1_-removebg-preview.png " />
+    <button onclick="toggleMenu()" class="burger"></button>
+
+    <div class="dropdowns">
+      <div class="dropdown">
+        <button>
+          ARMED FORCES
+          <img src="/images/chevron.svg" />
+        </button>
+        <div class="dropdown-menu">
+          <div>
+            <button>Indian Navy</button>
+            <button>Indian Air Force</button>
+            <button>Indian Army</button>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button>
+          AGNIVEER
+          <img src="/images/chevron.svg" />
+        </button>
+        <div class="dropdown-menu">
+          <div>
+            <button>Physical</button>
+            <button>Medical</button>
+            <button>Written</button>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button>
+          JOBS
+          <img src="/images/chevron.svg" />
+        </button>
+        <div class="dropdown-menu">
+          <div>
+            <button>Tech</button>
+            <button>Non-Tech</button>
+            <button>Retired Veteran</button>
+          </div>
+        </div>
+      </div>
+      <button class="GPT"> ArmyVerse
+      </button>
+      <button class="GPT"> ArmyGPT
+      </button>
+    </div>
+    
+  </div>
+  
+    <button class="loginBtn">
+    <span id="LogCorner">LogIn</span>  
+      <div class="arrow-wrapper">
+          <div class="arrow"></div>
+    
+    </button>
+  </nav>
+
+  <script>
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
+</body>
+
+</html>
