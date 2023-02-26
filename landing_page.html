@@ -11,9 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="./css/styles.css" rel="stylesheet" />
+  <!-- //----------------------------------------------------
+-------------------// -->
+ 
 </head>
 
-<body>
+<body onload="slider()">
   <nav class="navbar">
     <img src="/images/ARMY_WALAH__1___1_-removebg-preview.png " />
     <button onclick="toggleMenu()" class="burger"></button>
@@ -73,10 +76,102 @@
     
     </button>
   </nav>
+ <div class="banner">
+   <div class="slider">
+    <img src="/images/army1.jpeg" width="100%" height="80%" id="slideimg">
+   </div>
+   <div class="overlay">
+   </div>
+ </div>
+ <div class="container1">
+   <div class="card">
+    <div class="imgbx">
+      <img src="images/images3.jpeg" height="195px" width="380px">
+    </div>
+    <div class="content">
+      <h3>The Indian Army is the land-based branch of the Indian Armed Forces. It is the world's second-largest standing army and the largest army.</h3>
+    </div>
+   </div>
+   <div class="card">
+    <div class="imgbx">
+      <img src="images/air1.jpeg">
+    </div>
+    <div class="content">
+      <h3>The Indian Air Force (IAF) is the air arm of the Indian Armed Forces. Its complement of personnel and aircraft assets ranks as the third most powerful air force in the world</h3>
+    </div>
+   </div>
+   <div class="card">
+    <div class="imgbx">
+      <img src="images/navy3.jpeg" height="195px" width="380px">
+    </div>
+    <div class="content">
+      <h3>The Indian Navy is a multi-dimensional force that has been organized to safeguard India's maritime territorial integrity and other maritime interests.</h3>
+    </div>
+   </div>
+ </div>
+
+ <!-- ------------------ -->
+ <div class="container">
+  <div class="drop" style="--clr:#ff0f5b;">
+    <div class="content">
+      <h2>TEST SERIES</h2>
+      <p>Hello I am a web designer i am intrested in my desining work .</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="drop" style="--clr:#be01fe;">
+    <div class="content">
+      <h2>CAREER COUNCELLING</h2>
+      <p>Hello web designer i am using this project tancy border radius.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="drop" style="--clr:#ff0f5b;">
+    <div class="content">
+      <h2>01</h2>
+      <p>Hello I am a web designer i am intrested in my desining work .</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="drop" style="--clr:#01b4ff;">
+    <div class="content">
+      <h2>03</h2>
+      <p>Please like and subscribe this video turorial.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+ <script>
+  var slideimg = document.getElementById("slideimg");
+  var images = new Array(
+    "images/01.jpg",
+    "images/army2.png",
+    "images/03.jpeg",
+    "images/04.jpg"
+
+  );
+  var len = images.length;
+  var i=0;
+  function slider(){
+    if(i>len-1){
+      i=0;
+    }
+    slideimg.src=images[i];
+    i++; 
+    setTimeout('slider()',3000); 
+  }
+ </script>
 
   <script>
     const toggleMenu = () => document.body.classList.toggle("open");
   </script>
+  <script src="//code.tidio.co/uhoygapkxgvpopqdnoqroskkcmxnt79h.js" async></script>
 </body>
 
 </html>
